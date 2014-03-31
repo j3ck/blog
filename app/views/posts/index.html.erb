@@ -1,31 +1,21 @@
 <div class="container">
-  <h1>Listing posts</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Body</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @posts.each do |post| %>
-        <tr>
-          <td><%= post.title %></td>
-          <td><%= post.body %></td>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="head">
+        <%= post.title %>
+      </div>
+      <div class="body">
+        <p class="date"><%= post.created_at %></p>
+        <%= post.body %>
+      </div>
+      <div class="links">
+        <%= link_to 'Show', post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
 
   <br>
-
   <%= link_to 'New Post', new_post_path %>
 </div>
