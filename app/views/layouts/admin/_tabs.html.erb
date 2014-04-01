@@ -1,0 +1,6 @@
+<div class="tabs">
+	<ul>
+		<li class="<%= 'active' if current_page?(admin_root_path)%>"><%= link_to "All posts",  admin_root_path %></li>
+		<li class="<%= 'active' if current_page?(new_admin_post_path)%>"><%= link_to "Add new post",  new_admin_post_path %></li>
+	</ul>
+</div>
