@@ -1,0 +1,26 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(asset-path('bg.png'));
+}
+
+.header {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	* {
+		padding: 5px;
+		margin: 0;
+		display: inline-block;
+	}
+	.sign_bar {
+		float: right;
+	}
+	background-color: #ddd;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
