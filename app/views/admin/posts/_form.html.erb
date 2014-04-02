@@ -10,16 +10,14 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="fomr-group">
+    <%= f.text_field :title, placeholder:"Title", class:"input", rows:"3" %>
   </div>
-  <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_field :body %>
+  <div class="form-group">
+    <%= f.text_area :body, placeholder:"Body", class:"input" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit "Submit", class:"btn" %>
+    <%= button_to 'Back', posts_path, class:"btn" %>
   </div>
 <% end %>
