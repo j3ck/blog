@@ -2,15 +2,24 @@
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	background-color: rgba(220,220,220, 0.5);
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-family: sans-serif;
 	.head {
+		margin-bottom: 0px;
+		margin-top: 0px;
+		border-bottom: none;
 		font-size: 20px;
 		a:hover {
 			text-decoration: underline;
 		}
 	}
 	.body {
+		.time {
+			font-style: italic;
+			color: rgba(0,0,0,0.5);
+			margin-top: 0;
+		}
+		padding: 15px;
 	}
 }
 
