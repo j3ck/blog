@@ -10,7 +10,7 @@
 
 <div class="header">
 	<h2>Admin panel</h2>
-	<p class="sign_bar">Your signed in as <%= current_admin.email %></p>
+	<p class="sign_bar">Your signed in as <span><%= current_admin.email %></span> |<%= link_to 'Logout', destroy_admin_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div>
 <%= render 'layouts/admin/tabs' %>
 <div class="container">
