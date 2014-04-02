@@ -1,0 +1,93 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(asset-path('bg.png'));
+	a {
+		text-decoration: none;
+		font-family: "Trebuchet MS";
+		font-size: 18px;
+		font-weight: bold;
+	}
+	a:active {
+		color: #fff;
+	}
+}
+
+.header {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	/*margin-bottom: 20px;*/
+	padding: 0 10px;
+	* {
+		padding: 5px;
+		margin: 0;
+		display: inline-block;
+	}
+	.sign_bar {
+		float: right;
+		margin-top: 4px;
+	}
+	background-color: #ddd;
+	/*border-top: 1px solid;
+	border-bottom: 1px solid;*/
+}
+
+.tabs {
+	ul li {
+		list-style-type: none;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	li {
+			text-align: center;
+		a {
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			text-decoration: none;
+			font-family: "Trebuchet MS";
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	a:active {
+		font-family: "Trebuchet MS";
+		color: #fff;
+	}
+
+	li:hover {
+			border-radius: 5px;
+			padding: 10px;
+			margin-bottom: 5px;
+			text-align: center;
+		a {
+			text-decoration: none;
+			font-family: "Trebuchet MS";
+			font-size: 18px;
+			font-weight: bold;
+		}
+			background-color: rgba(200,200,200,0.5);
+	}
+	.active, .active:hover {
+		/*background-color: #804B4B;*/
+		background-color: rgba(128,75,75,0.8);
+		padding: 10px;
+		border: 1px solid #BB9D9E;
+		border-radius: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+		a {
+			color: #fff;
+		}
+		text-decoration: none;
+		font-family: "Trebuchet MS";
+		font-size: 18px;
+		font-weight: bold;
+	}
+	position: absolute;
+}
