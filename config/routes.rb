@@ -3,7 +3,7 @@ SampleBlog::Application.routes.draw do
 
   namespace :admin do
     root 'posts#index'
-    resources :posts
+    resources :posts, except: :index
   end
 
   root 'home#index'
