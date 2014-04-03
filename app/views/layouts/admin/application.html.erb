@@ -12,8 +12,15 @@
 	<h2>Admin panel</h2>
 	<p class="sign_bar">Your signed in as <span><%= current_admin.email %></span> |<%= link_to 'Logout', destroy_admin_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div>
+
 <%= render 'layouts/admin/tabs' %>
 <div class="container">
+	<% flash.each do |name, msg| -%>
+			<div class="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<%= msg %>
+	</div>
+	<% end %>
 	<%= yield %>
 </div>
 
