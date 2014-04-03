@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+	<div class="post">
+		<div class="head">
+			<%= post.title %>
+		</div>
+		<div class="body">
+			<p class="time"><%= post.created_at %></p>
+			<%= post.body %>
+		</div>
+	</div>
+<% end %>
